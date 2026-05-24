@@ -44,7 +44,7 @@ with col1:
     if text.strip():
         wordcloud = WordCloud(width=800, height=400, background_color="white", colormap="viridis").generate(text)
         fig, ax = plt.subplots(figsize=(10, 5))
-        ax.imshow(wordcloud, interpolation="蝸bilinear")
+        ax.imshow(wordcloud, interpolation="bilinear")
         ax.axis("off")
         st.pyplot(fig)
     else:
